@@ -67,7 +67,7 @@ Secondary objectives include:
   - User drill‑down analytics  
 
 ---
-
+---
                    ┌──────────────────────────────────────────┐
                    │        1. User Interface Layer            │
                    │        (Streamlit Frontend)               │
@@ -127,6 +127,10 @@ Secondary objectives include:
 │  • Cloud deployment (Streamlit Cloud)                                      │
 │  • Public access link for SOC teams & stakeholders                         │
 └────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
 
 
 ## 🔹 Dashboard Impact
