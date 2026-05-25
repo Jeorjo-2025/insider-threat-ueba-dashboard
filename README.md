@@ -68,6 +68,67 @@ Secondary objectives include:
 
 ---
 
+                   ┌──────────────────────────────────────────┐
+                   │        1. User Interface Layer            │
+                   │        (Streamlit Frontend)               │
+                   └──────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     2. Data Generation & Input Layer                       │
+│  • Synthetic user activity generator                                       │
+│  • Department assignment logic                                             │
+│  • Behavioral feature simulation (files, USB, emails, logins, off-hours)   │
+│  • Anomaly injection engine                                                │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     3. Data Processing & Feature Layer                     │
+│  • DataFrame construction (pandas)                                         │
+│  • Feature selection                                                       │
+│  • MinMaxScaler normalization                                              │
+│  • Preparation for ML model input                                          │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     4. Machine Learning & Scoring Layer                    │
+│  • Isolation Forest anomaly detection                                      │
+│  • Raw anomaly score extraction                                            │
+│  • Risk score transformation (0–100)                                       │
+│  • Risk level classification (Low/Medium/High)                             │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     5. Analytics & Insights Layer                          │
+│  • Organization risk index                                                 │
+│  • High‑risk user leaderboard                                              │
+│  • Exfiltration modality inference                                         │
+│  • Department‑level risk aggregation                                       │
+│  • User‑level behavioral profiling                                         │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     6. Visualization & Dashboard Layer                     │
+│  • KPI metrics                                                             │
+│  • Risk meter (gauge‑style bar)                                            │
+│  • Pie charts, histograms, bar charts (Plotly)                             │
+│  • Drill‑down user cards                                                   │
+│  • Interactive controls (sidebar sliders, selectors)                       │
+└────────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     7. Deployment & Access Layer                           │
+│  • Streamlit runtime                                                       │
+│  • Cloud deployment (Streamlit Cloud)                                      │
+│  • Public access link for SOC teams & stakeholders                         │
+└────────────────────────────────────────────────────────────────────────────┘
+
+
 ## 🔹 Dashboard Impact
 The dashboard transforms raw behavioral data into **clear, actionable insights**:
 
